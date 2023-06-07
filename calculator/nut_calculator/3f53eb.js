@@ -1,0 +1,6 @@
+jQuery(document).ready(function(){var vals=tableToArray(document.getElementById('weights')),type=document.getElementById('type'),sizes=document.getElementById('size'),optgroup=document.createElement('optgroup'),button=document.getElementById('calc_button'),quantity=document.getElementById('quantity'),total=document.getElementById('weight');sizes.appendChild(optgroup);function tableToArray(table){var arr=table.getElementsByTagName('tr'),table={};for(i=1;i<arr.length;i++){;var sub=arr[i].getElementsByTagName('td'),name;if(sub.length){name=sub[0].innerHTML;table[name]=sub;}}
+return table;}
+function updateSizes(col){sizes.removeChild(optgroup);optgroup.innerHTML='';for(var i in vals){if(vals[i][col].innerHTML!=='&nbsp;'){var $opt=jQuery('<option></option>');$opt.html(i);optgroup.appendChild($opt[0]);}}
+sizes.appendChild(optgroup);}
+type.onchange=function(){updateSizes(this.selectedIndex);};button.onclick=function(){var s=sizes.value,t=type.selectedIndex,q=parseFloat(quantity.value);if(!q){alert('Please enter a quantity');return;}
+total.innerHTML=parseFloat(vals[s][t].innerHTML)*q/100;};});

@@ -1,0 +1,168 @@
+var psgIUdsid="3oroAsl1X5FR"; // n=162.158.167.234, c=123.201.207.123
+
+// safe-textlink@gecko.js
+
+var psgIUdiso;
+try {
+	psgIUdiso = (opener != null) && (typeof(opener.name) != "unknown") && (opener.psgIUdwid != null);
+} catch(e) {
+	psgIUdiso = false;
+}
+if (psgIUdiso) {
+	window.psgIUdwid = opener.psgIUdwid + 1;
+	psgIUdsid = psgIUdsid + "_" + window.psgIUdwid;
+} else {
+	window.psgIUdwid = 1;
+}
+function psgIUdn() {
+	return (new Date()).getTime();
+}
+var psgIUds = psgIUdn();
+function psgIUdst(f, t) {
+	if ((psgIUdn() - psgIUds) < 7200000) {
+		return setTimeout(f, t * 1000);
+	} else {
+		return null;
+	}
+}
+var psgIUdol = false;
+function psgIUdow() {
+	if (psgIUdol || (2 == 1)) {
+		var pswo = "menubar=0,location=0,scrollbars=auto,resizable=1,status=0,width=360,height=500";
+		var pswn = "pscw_" + psgIUdn();
+		var url = "http://messenger.providesupport.com/messenger/12k2hr5e8x5fo1hmjfl4xqx486.html?ps_l=" + escape(document.location) + "";
+		window.open(url, pswn, pswo);
+	} else if (2 == 2) {
+		document.location = "http://www.portlandbolt.com/aboutus/contact/";
+	}
+}
+var psgIUdil;
+var psgIUdit;
+function psgIUdpi() {
+	var il;
+	if (3 == 2) {
+		il = window.pageXOffset + 50;
+	} else if (3 == 3) {
+		il = (window.innerWidth * 50 / 100) + window.pageXOffset;
+	} else {
+		il = 50;
+	}
+	il -= (277 / 2);
+	var it;
+	if (3 == 2) {
+		it = window.pageYOffset + 50;
+	} else if (3 == 3) {
+		it = (window.innerHeight * 50 / 100) + window.pageYOffset;
+	} else {
+		it = 50;
+	}
+	it -= (204 / 2);
+	if ((il != psgIUdil) || (it != psgIUdit)) {
+		psgIUdil = il;
+		psgIUdit = it;
+		var d = document.getElementById('cigIUd');
+		if (d != null) {
+			d.style.left  = Math.round(psgIUdil) + "px";
+			d.style.top  = Math.round(psgIUdit) + "px";
+		}
+	}
+	setTimeout("psgIUdpi()", 100);
+}
+var psgIUdlc = 0;
+function psgIUdsi(t) {
+	window.onscroll = psgIUdpi;
+	window.onresize = psgIUdpi;
+	psgIUdpi();
+	psgIUdlc = 0;
+	var url = "http://messenger.providesupport.com/" + ((t == 2) ? "auto" : "chat") + "-invitation/12k2hr5e8x5fo1hmjfl4xqx486.html?ps_t=" + psgIUdn() + "&ps_vsid=" + psgIUdsid + "";
+	var d = document.getElementById('cigIUd');
+	if (d != null) {
+		d.innerHTML = '<iframe allowtransparency="true" style="background:transparent;width:277;height:204" src="' + url + 
+			'" onload="psgIUdld()" frameborder="no" width="277" height="204" scrolling="no"></iframe>';
+	}
+}
+function psgIUdld() {
+	if (psgIUdlc == 1) {
+		var d = document.getElementById('cigIUd');
+		if (d != null) {
+			d.innerHTML = "";
+		}
+	}
+	psgIUdlc++;
+}
+if (false) {
+	psgIUdsi(1);
+}
+var psgIUdd = document.getElementById('scgIUd');
+if (psgIUdd != null) {
+	if (psgIUdol || (2 == 1) || (2 == 2)) {
+		var ctt = "";
+		if (ctt != "") {
+			tt = ' alt="' + ctt + '" title="' + ctt + '"';
+		} else {
+			tt = '';
+		}
+		if (false) {
+			psgIUdd.innerHTML = '<table style="display:inline;border:0px;border-collapse:collapse;border-spacing:0;"><tr><td style="padding:0px;text-align:center;border:0px"><a href="#" onclick="psgIUdow(); return false;"'+tt+'><span id="psgIUdl">' + 'Offline' + '</span></a></td></tr><tr><td style="padding:0px;text-align:center;border:0px"><a href="http://www.providesupport.com/pb/12k2hr5e8x5fo1hmjfl4xqx486" target="_blank"><img src="http://image.providesupport.com/lcbpsh.gif" width="140" height="17" style="border:0;display:block;margin:auto"></a></td></tr></table>';
+		} else {
+			psgIUdd.innerHTML = '<a href="#" onclick="psgIUdow(); return false;"'+tt+'><span id="psgIUdl">' + 'Offline' + '</span></a>';
+		}
+	} else {
+		psgIUdd.innerHTML = '';
+	}
+}
+var psgIUdop = false;
+function psgIUdco() {
+	var w1 = psgIUdci.width - 1;
+	psgIUdol = (w1 & 1) != 0;
+	psgIUdsl(psgIUdol ? "Online" : "Offline");
+	psgIUdscf((w1 & 2) != 0);
+	var h = psgIUdci.height;
+
+	if (h == 1) {
+		psgIUdop = false;
+	
+	} else if ((h == 2) && (!psgIUdop)) {
+		psgIUdop = true;
+		psgIUdsi(1);
+
+	} else if ((h == 3) && (!psgIUdop)) {
+		psgIUdop = true;
+		psgIUdsi(2);
+	}
+}
+var psgIUdci = new Image();
+psgIUdci.onload = psgIUdco;
+var psgIUdpm = false;
+var psgIUdcp = psgIUdpm ? 30 : 60;
+var psgIUdct = null;
+function psgIUdscf(p) {
+	if (psgIUdpm != p) {
+		psgIUdpm = p;
+		psgIUdcp = psgIUdpm ? 30 : 60;
+		if (psgIUdct != null) {
+			clearTimeout(psgIUdct);
+			psgIUdct = null;
+		}
+		psgIUdct = psgIUdst("psgIUdrc()", psgIUdcp);
+	}
+}
+function psgIUdrc() {
+	psgIUdct = psgIUdst("psgIUdrc()", psgIUdcp);
+	try {
+		psgIUdci.src = "http://image.providesupport.com/cmd/12k2hr5e8x5fo1hmjfl4xqx486?" + "ps_t=" + psgIUdn() + "&ps_l=" + escape(document.location) + "&ps_r=" + escape(document.referrer) + "&ps_s=" + psgIUdsid + "" + "";
+	} catch(e) {
+	}
+}
+psgIUdrc();
+var psgIUdcl = "Offline";
+function psgIUdsl(l) {
+	if (psgIUdcl != l) {
+		var d = document.getElementById('psgIUdl');
+		if (d != null) {
+			d.innerHTML = l;
+		}
+		psgIUdcl = l;
+	}
+}
+

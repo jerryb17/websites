@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class=" js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nut Weight Chart</title>
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nut Weight Chart ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:description" content="A table of comparative weights for various sizes and grades of nuts">
+<link rel="stylesheet" id="pb-main-css" href="nut_calculator/main.css" type="text/css" media="all and (min-width: 200px)">
+<link rel="stylesheet" id="print-style-css" href="nut_calculator/print.css" type="text/css" media="print">
+<script type="text/javascript" src="nut_calculator/jquery.js.download"></script>
+<script type="text/javascript" src="nut_calculator/jquery-migrate.min.js.download"></script>
+                        <style>
+                    #calc .frm_left_container .frm_primary_label {
+        width: 30%;
+    }
+    #calc input, #calc select{
+        width: 60%;
+    }
+    #calc h3{
+        margin-top:0;
+        border-bottom:1px solid #DDD;
+    }
+    #calc h5{
+        font-weight:normal;
+        border-top:1px solid #DDD;
+        margin-top:10px;
+        margin-bottom: 0;
+        padding-top:5px;
+    }                </style>
+                <script type="text/javascript" src="nut_calculator/saved_resource"></script></head>
+
+    <body><!-- #masthead -->
+                <div id="page" class="site">
+            <div id="main" class="site-main">                                
+                <div class="site-content site-sidebar" role="main">   
+                  <div id="content-sidebar" class="content-sidebar" role="complementary">
+                  <div class="widget"></div>            </div>
+    <div class="page-content" role="main">        
+        <div id="calc" class="frm_form_fields box">
+          <h3>Calculate weight</h3>
+          <div class="frm_form_field form-field  frm_left_container">
+            <label for="type" class="frm_primary_label">Type:</label>
+            <select id="type" name="type">
+              <option>Select One</option>
+              <option value="hex">Finished Hex</option>
+              <option value="heavy_hex">Heavy Hex</option>
+              <option value="jam">Hex Jam</option>
+              <option value="heavy_jam">Heavy Hex Jam</option>
+              <option value="square">Square</option>
+              <option value="heavy_square">Heavy Square</option>
+            </select>
+          </div>
+          <div class="frm_form_field form-field  frm_left_container" id="sizeContainer">
+            <label for="size" class="frm_primary_label">Size:</label>
+            <select id="size" name="size">
+              <option>Select Size</option>
+              <optgroup>
+                <option>1/2"</option>
+                <option>5/8"</option>
+                <option>3/4"</option>
+                <option>7/8"</option>
+                <option>1"</option>
+                <option>1-1/8"</option>
+                <option>1-1/4"</option>
+                <option>1-3/8"</option>
+                <option>1-1/2"</option>
+                <option>1-5/8"</option>
+                <option>1-3/4"</option>
+                <option>1-7/8"</option>
+                <option>2"</option>
+                <option>2-1/4"</option>
+                <option>2-1/2"</option>
+                <option>2-3/4"</option>
+                <option>3"</option>
+                <option>3-1/4"</option>
+                <option>3-1/2"</option>
+                <option>3-3/4"</option>
+                <option>4"</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="frm_form_field form-field  frm_left_container">
+            <label for="quantity" class="frm_primary_label">Quantity:</label>
+            <input id="quantity" name="quantity" size="8" type="text">
+          </div>
+          <button id="calc_button" class="aligncenter action button">Calculate</button>
+          <h5>Total weight: <strong id="weight"></strong> lbs.</h5>
+        </div>
+        <h3>Pounds (lbs) per 100 pieces</h3>
+<div class="table-responsive"><table id="weights" class="highlight-table">
+<thead>
+<tr>
+<th>Size</th>
+<th>Finished
+Hex</th>
+<th>Heavy
+Hex</th>
+<th>Finished
+Jam</th>
+<th>Heavy
+Hex
+Jam</th>
+<th>Square</th>
+<th>Heavy
+Square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1/2"</td>
+<td>3.750</td>
+<td>6.540</td>
+<td>2.620</td>
+<td>4.000</td>
+<td>5.780</td>
+<td>7.870</td>
+</tr>
+<tr>
+<td>5/8"</td>
+<td>7.330</td>
+<td>11.900</td>
+<td>4.930</td>
+<td>6.960</td>
+<td>10.800</td>
+<td>14.300</td>
+</tr>
+<tr>
+<td>3/4"</td>
+<td>11.900</td>
+<td>19.300</td>
+<td>7.700</td>
+<td>11.000</td>
+<td>15.400</td>
+<td>23.500</td>
+</tr>
+<tr>
+<td>7/8"</td>
+<td>19.000</td>
+<td>29.700</td>
+<td>12.000</td>
+<td>16.700</td>
+<td>24.500</td>
+<td>36.200</td>
+</tr>
+<tr>
+<td>1"</td>
+<td>28.300</td>
+<td>42.500</td>
+<td>17.600</td>
+<td>23.500</td>
+<td>36.300</td>
+<td>51.500</td>
+</tr>
+<tr>
+<td>1-1/8"</td>
+<td>40.300</td>
+<td>59.200</td>
+<td>24.700</td>
+<td>32.400</td>
+<td>52.500</td>
+<td>72.400</td>
+</tr>
+<tr>
+<td>1-1/4"</td>
+<td>54.300</td>
+<td>78.600</td>
+<td>36.100</td>
+<td>45.800</td>
+<td>70.600</td>
+<td>95.500</td>
+</tr>
+<tr>
+<td>1-3/8"</td>
+<td>73.000</td>
+<td>102.000</td>
+<td>47.900</td>
+<td>59.300</td>
+<td>94.500</td>
+<td>125.000</td>
+</tr>
+<tr>
+<td>1-1/2"</td>
+<td>94.300</td>
+<td>131.000</td>
+<td>60.900</td>
+<td>74.800</td>
+<td>122.000</td>
+<td>161.000</td>
+</tr>
+<tr>
+<td>1-5/8"</td>
+<td></td>
+<td>162.000</td>
+<td></td>
+<td>91.600</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1-3/4"</td>
+<td>151.000</td>
+<td>204.000</td>
+<td>100.000</td>
+<td>114.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1-7/8"</td>
+<td></td>
+<td>241.000</td>
+<td></td>
+<td>134.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2"</td>
+<td>224.000</td>
+<td>299.000</td>
+<td>140.000</td>
+<td>165.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2-1/4"</td>
+<td></td>
+<td>419.000</td>
+<td></td>
+<td>227.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2-1/2"</td>
+<td></td>
+<td>564.000</td>
+<td></td>
+<td>332.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2-3/4"</td>
+<td></td>
+<td>738.000</td>
+<td></td>
+<td>429.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3"</td>
+<td></td>
+<td>950.000</td>
+<td></td>
+<td>545.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3-1/4"</td>
+<td></td>
+<td>1194.000</td>
+<td></td>
+<td>651.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3-1/2"</td>
+<td></td>
+<td>1526.000</td>
+<td></td>
+<td>851.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3-3/4"</td>
+<td></td>
+<td>1812.000</td>
+<td></td>
+<td>1005.000</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="hover">
+<td>4"</td>
+<td></td>
+<td>2180.000</td>
+<td></td>
+<td>1200.000</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+    </div><!-- #content -->
+    </div>
+
+</div><!-- #main --><!-- #colophon -->
+</div><!-- #page -->
+<!--footer-->
+
+
+<script type="text/javascript" src="nut_calculator/wp-embed.min.js.download"></script>
+<!-- footer-->
+
+
+
+
+<script type="text/javascript" src="nut_calculator/saved_resource(1)"></script>
+</body></html>

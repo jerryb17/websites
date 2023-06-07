@@ -1,0 +1,199 @@
+/**
+ * Umfasst den gesamten Rechner.
+ * Kann zur Positionierung genutzt
+ * werden.
+ */
+div#gwr_gewichtsrechner {
+
+}
+
+/**
+ * Betrifft sämtliche Elemente
+ * im Gewichtsrechner
+ */
+div#gwr_gewichtsrechner * {
+	font-family: Arial;
+	font-size: 11px;
+	color: #444;
+}
+
+/**
+ * Betrifft sämtliche Links
+ * im Gewichtsrechner
+ */
+div#gwr_gewichtsrechner a {
+	font-family: Courier New, Courier;
+	text-decoration: none;
+	color: #444;
+}
+
+/**
+ * Die Titelzeile des Gewichtsrechners
+ */
+h1#gwr_titel {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bold;
+	/*border-bottom: 2px solid #9ba1a8;*/
+	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+/**
+ * Die Fläche des Rechners
+ */
+div#gwr_canvas {
+	position:relative;
+	border:1px solid #000;
+	width:400px;
+	height:290px;
+}
+
+/**
+ * Div für Anzeige und Positionierung der
+ * Auswahl der Stahlsorte
+ */
+div#gwr_typauswahl {
+	position:relative;
+	text-align:right;
+	width:400px;
+	height:30px;
+	background-color:#ddd;
+}
+
+/**
+ * Select für die Stahlsorte
+ */
+select#gwr_typ {
+}
+
+/**
+ * Enthält alle Formulare für alle
+ * Stahlsorten
+ */
+div#gwr_formulare {
+}
+
+/**
+ * Formularstyles für alle Stahlsortendivs
+ */
+div.gwr_stahlsorte {
+	position:relative;
+/*	height:270px; */
+	width:400px;
+}
+
+/**
+ * Linke Spalte der Tabelle für Eingabe von
+ * Werten wie Stärke und Höhe etc.
+ */
+td.gwr_linke_spalte {
+	width:20px;
+	text-align:center;
+}
+
+/**
+ * Mittlere Spalte der Tabelle für Eingabe von
+ * Werten wie Stärke und Höhe etc.
+ */
+td.gwr_mittlere_spalte {
+	width:110px;
+	text-align:center;
+}
+
+
+/**
+ * Tabelle in der mittleren Spalte für
+ * die Eingabe von Werten wie Stärke etc.
+ */
+td.gwr_mittlere_spalte table {
+	margin: auto;
+	width: 100px;
+	padding: 0;
+}
+
+/**
+ * Rechte Spalte der Tabelle für Eingabe von
+ * Werten wie Stärke und Höhe etc.
+ */
+td.gwr_rechte_spalte {
+	width:20px;
+	text-align:center;
+}
+
+/**
+ * Tabelle für Eingabe von
+ * Werten wie Stärke und Höhe etc.
+ */
+table.gwr_table_stahlsorte {
+	position:relative;
+	left:20px;
+	width:200px;
+	border-collapse:collapse;
+	margin-bottom: 5px;
+}
+
+table.gwr_table_eingeben {
+	position:relative;
+	left:20px;
+	width:200px;
+	border-collapse:collapse;
+	margin-bottom: 5px;
+}
+
+/**
+ * Styles für das aktivierte Inputfeld,
+ * z. B. für Länge, Stk., Ergebnis
+ */
+input.gwr_input {
+	border: 1px solid rgb(167, 171, 174);
+	padding: 2px;
+	font-size: 12px;
+	margin:0;
+	line-height:1.3em;
+}
+
+/**
+ * Styles für das deaktivierte Inputfeld
+ */
+input.gwr_input_dis {
+	border: 1px solid rgb(167, 171, 174);
+	padding: 2px;
+	font-size: 12px;
+	margin:0;
+	line-height:1.3em;
+}
+
+/**
+ * Piktogramm für die jew. Stahlsorte
+ */
+.gwr_typ_bild {
+	position:absolute;
+	left:5px;
+	top:5px;
+}
+
+/**
+ * Formular, enthält alles für die Berechnung
+ * und Anzeige des Ergebnisses
+ */
+.gwr_formular {
+	position:relative;
+	left:155px;
+	margin:5px;
+}
+
+/**
+ * Div für Anzeige und Positionierung der
+ * Fußnote
+ */
+div#gwr_footer {
+	position:absolute;
+	text-align:right;
+	top:275px;
+	width:400px;
+	height:14px;
+	background-color:#ddd;
+}
+

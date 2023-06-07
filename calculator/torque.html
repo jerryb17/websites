@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class=" js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bolt Torque Chart</title>
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Bolt Torque Chart">
+<meta property="og:description" content="Torque values for various grades and diameters of fasteners.">
+<link rel="stylesheet" id="pb-main-css" href="bolt_torque/main.css" type="text/css" media="all and (min-width: 200px)">
+<link rel="stylesheet" id="print-style-css" href="bolt_torque/print.css" type="text/css" media="print">
+<script type="text/javascript" src="bolt_torque/jquery.js.download"></script>
+<script type="text/javascript" src="bolt_torque/jquery-migrate.min.js.download"></script>
+<script type="text/javascript">document.documentElement.className += " js";</script>
+            </head>
+
+    <body><!-- #masthead -->
+                <div id="page" class="site">
+            <div id="main" class="site-main">
+                <div class="site-content site-sidebar" role="main"><h1 class="entry-title">Bolt Torque Chart</h1>    <div id="content-sidebar" class="content-sidebar" role="complementary">
+        <div class="frm_form_fields box" id="bolt-torque-calc" style="margin-top:0;padding:10px 10px 0 10px;">
+            <h3>Calculate Torque</h3>
+            <div class="frm_form_field form-field  frm_left_container">
+                <label for="grade" class="frm_primary_label">Grade:</label>
+                <select id="grade" name="grade">
+                    <option value=""></option>
+                <option value="ASTM A193 B7">ASTM A193 B7</option><option value="ASTM A307">ASTM A307</option><option value="ASTM A320 L7">ASTM A320 L7</option><option value="ASTM A325">ASTM A325</option><option value="ASTM A354-BD">ASTM A354-BD</option><option value="ASTM A449">ASTM A449</option><option value="ASTM A490">ASTM A490</option><option value="SAE Grade 2">SAE Grade 2</option><option value="SAE Grade 5">SAE Grade 5</option><option value="SAE Grade 8">SAE Grade 8</option></select>
+            </div>
+            <div class="frm_form_field form-field  frm_left_container">
+                <label for="finish" class="frm_primary_label">Finish:</label>
+                <select id="finish" name="finish">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="frm_form_field form-field  frm_left_container">
+                <label for="diameter" class="frm_primary_label">Diameter:</label>
+                <select id="diameter" name="diameter">
+                    <option value=""></option>
+                </select>
+            </div>
+            <button id="calc_button" class="aligncenter action button">Calculate</button>
+            <h5>Torque: <strong id="torque">?</strong> ft. lbs.</h5>
+        </div>
+            </div>
+    <div class="page-content" role="main">        
+        <h3>Suggested Starting Values</h3>
+<p>The below estimated torque calculations are only offered as a guide. Use of its content by anyone is the sole responsibility of that person and they assume all risk.&nbsp;<strong>Due to many variables that affect the torque-tension relationship like human error, surface texture, and lubrication the only way to determine the correct torque is through experimentation under actual joint and assembly conditions</strong>.</p>
+<ul class="buttons">
+<li><a class="button link" href="#bolt-torque-a307">A307</a></li>
+<li><a class="button link" href="#bolt-torque-gr2">Grade 2</a></li>
+<li><a class="button link" href="#bolt-torque-a325">A325</a></li>
+<li><a class="button link" href="#bolt-torque-a449">A449</a></li>
+<li><a class="button link" href="#bolt-torque-a449">Grade 5</a></li>
+<li><a class="button link" href="#bolt-torque-a193b7">A193 B7</a></li>
+<li><a class="button link" href="#bolt-torque-a193b7">A320 L7</a></li>
+<li><a class="button link" href="#bolt-torque-a490">A490</a></li>
+<li><a class="button link" href="#bolt-torque-a354bd">A354</a></li>
+<li><a class="button link" href="#bolt-torque-a354bd">Grade 8</a></li>
+</ul>
+<h2 id="bolt-torque-a307" class="pb-table-title">ASTM A307</h2>
+<div class="table-wrapper"><table class="highlight-table">
+<thead>
+<tr>
+<th rowspan="2">Bolt Size</th>
+<th rowspan="2"><abbr title="Threads Per Inch">TPI</abbr></th>
+<th rowspan="2">Proof
+Load (lbs)<sup><a href="#note1">1</a></sup></th>
+<th rowspan="2">Clamp
+Load (lbs)<sup><a href="#note2">2</a></sup></th>
+<th colspan="3">Tightening Torque (ft lbs)</th>
+</tr>
+<tr>
+<th class="finish">Galv+Waxed</th>
+<th class="finish">Galv</th>
+<th class="finish">Plain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>⁄<sub>4</sub></td>
+<td>20</td>
+<td>1,053</td>
+<td>790</td>
+<td>2</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>16</sub></td>
+<td>18</td>
+<td>1,735</td>
+<td>1,302</td>
+<td>3</td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>8</sub></td>
+<td>16</td>
+<td>2,567</td>
+<td>1,925</td>
+<td>6</td>
+<td>15</td>
+<td>12</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>16</sub></td>
+<td>14</td>
+<td>3,521</td>
+<td>2,640</td>
+<td>10</td>
+<td>24</td>
+<td>19</td>
+</tr>
+<tr>
+<td><sup>1</sup>⁄<sub>2</sub></td>
+<td>13</td>
+<td>4,700</td>
+<td>3,525</td>
+<td>15</td>
+<td>37</td>
+<td>29</td>
+</tr>
+<tr>
+<td><sup>9</sup>⁄<sub>16</sub></td>
+<td>12</td>
+<td>6,028</td>
+<td>4,521</td>
+<td>21</td>
+<td>53</td>
+<td>42</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>8</sub></td>
+<td>11</td>
+<td>7,485</td>
+<td>5,614</td>
+<td>29</td>
+<td>73</td>
+<td>58</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>4</sub></td>
+<td>10</td>
+<td>11,062</td>
+<td>8,297</td>
+<td>52</td>
+<td>130</td>
+<td>104</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>8</sub></td>
+<td>9</td>
+<td>15,301</td>
+<td>11,476</td>
+<td>84</td>
+<td>209</td>
+<td>167</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>20,071</td>
+<td>15,053</td>
+<td>125</td>
+<td>314</td>
+<td>251</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>7</td>
+<td>25,271</td>
+<td>18,953</td>
+<td>178</td>
+<td>444</td>
+<td>355</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>7</td>
+<td>32,093</td>
+<td>24,070</td>
+<td>251</td>
+<td>627</td>
+<td>501</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>6</td>
+<td>38,254</td>
+<td>28,690</td>
+<td>329</td>
+<td>822</td>
+<td>657</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>6</td>
+<td>46,534</td>
+<td>34,900</td>
+<td>436</td>
+<td>1,091</td>
+<td>873</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>4</sub></td>
+<td>5</td>
+<td>62,928</td>
+<td>47,196</td>
+<td>688</td>
+<td>1,721</td>
+<td>1,377</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>82,800</td>
+<td>62,100</td>
+<td>1,035</td>
+<td>2,588</td>
+<td>2,070</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>4</sub></td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>107,640</td>
+<td>80,730</td>
+<td>1,514</td>
+<td>3,784</td>
+<td>3,027</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>2</sub></td>
+<td>4</td>
+<td>132,480</td>
+<td>99,360</td>
+<td>2,070</td>
+<td>5,125</td>
+<td>4,140</td>
+</tr>
+<tr>
+<td>2<sup>3</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>163,282</td>
+<td>122,461</td>
+<td>2,806</td>
+<td>7,016</td>
+<td>5,613</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>197,726</td>
+<td>148,295</td>
+<td>3,707</td>
+<td>9,268</td>
+<td>7,415</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>235,152</td>
+<td>176,364</td>
+<td>4,777</td>
+<td>11,941</td>
+<td>9,553</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>2</sub></td>
+<td>4</td>
+<td>275,890</td>
+<td>206,917</td>
+<td>6,035</td>
+<td>15,088</td>
+<td>12,070</td>
+</tr>
+<tr>
+<td>3<sup>3</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>319,939</td>
+<td>239,954</td>
+<td>7,499</td>
+<td>18,746</td>
+<td>14,997</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td>366,970</td>
+<td>275,227</td>
+<td>9,174</td>
+<td>22,936</td>
+<td>18,348</td>
+</tr>
+</tbody>
+</table></div><a href="#" class="top-of-page" title="top of page"><span class="genericon genericon-uparrow"></span> Top of page</a>
+<h2 id="bolt-torque-gr2" class="pb-table-title">SAE Grade 2</h2>
+<div class="table-wrapper"><table class="highlight-table">
+<thead>
+<tr>
+<th rowspan="2">Bolt Size</th>
+<th rowspan="2"><abbr title="Threads Per Inch">TPI</abbr></th>
+<th rowspan="2">Proof
+Load (lbs)&nbsp;<sup><a href="#note1">1</a></sup></th>
+<th rowspan="2">Clamp
+Load (lbs)&nbsp;<sup><a href="#note2">2</a></sup></th>
+<th colspan="3">Tightening Torque (ft lbs)</th>
+</tr>
+<tr>
+<th class="finish">Galv+Waxed</th>
+<th class="finish">Galv</th>
+<th class="finish">Plain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>⁄<sub>4</sub></td>
+<td>20</td>
+<td>1,750</td>
+<td>1,313</td>
+<td>3</td>
+<td>7</td>
+<td>5</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>16</sub></td>
+<td>18</td>
+<td>2,900</td>
+<td>2,175</td>
+<td>6</td>
+<td>14</td>
+<td>11</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>8</sub></td>
+<td>16</td>
+<td>4,250</td>
+<td>3,188</td>
+<td>10</td>
+<td>25</td>
+<td>20</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>16</sub></td>
+<td>14</td>
+<td>5,850</td>
+<td>4,388</td>
+<td>16</td>
+<td>40</td>
+<td>32</td>
+</tr>
+<tr>
+<td><sup>1</sup>⁄<sub>2</sub></td>
+<td>13</td>
+<td>7,800</td>
+<td>5,850</td>
+<td>24</td>
+<td>61</td>
+<td>49</td>
+</tr>
+<tr>
+<td><sup>9</sup>⁄<sub>16</sub></td>
+<td>12</td>
+<td>10,000</td>
+<td>7,500</td>
+<td>35</td>
+<td>88</td>
+<td>70</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>8</sub></td>
+<td>11</td>
+<td>12,400</td>
+<td>9,300</td>
+<td>48</td>
+<td>121</td>
+<td>97</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>4</sub></td>
+<td>10</td>
+<td>18,400</td>
+<td>13,800</td>
+<td>86</td>
+<td>216</td>
+<td>173</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>8</sub></td>
+<td>9</td>
+<td>15,200</td>
+<td>11,400</td>
+<td>83</td>
+<td>208</td>
+<td>166</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>20,000</td>
+<td>15,000</td>
+<td>125</td>
+<td>313</td>
+<td>250</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>7</td>
+<td>25,200</td>
+<td>18,900</td>
+<td>177</td>
+<td>443</td>
+<td>354</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>7</td>
+<td>32,000</td>
+<td>24,000</td>
+<td>250</td>
+<td>625</td>
+<td>500</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>6</td>
+<td>38,100</td>
+<td>28,575</td>
+<td>327</td>
+<td>819</td>
+<td>655</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>6</td>
+<td>46,400</td>
+<td>34,800</td>
+<td>435</td>
+<td>1,088</td>
+<td>870</td>
+</tr>
+</tbody>
+</table></div><a href="#" class="top-of-page" title="top of page"><span class="genericon genericon-uparrow"></span> Top of page</a>
+<h2 id="bolt-torque-a325" class="pb-table-title">ASTM A325</h2>
+<div class="table-wrapper"><table class="highlight-table">
+<thead>
+<tr>
+<th rowspan="2">Bolt Size</th>
+<th rowspan="2"><abbr title="Threads Per Inch">TPI</abbr></th>
+<th colspan="2">Tension</th>
+<th colspan="2">Tightening Torque Range (ft lbs) (Min - Max)</th>
+</tr>
+<tr>
+<th>Min</th>
+<th>Max</th>
+<th class="finish">Galv+Waxed</th>
+<th class="finish">Plain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>⁄<sub>2</sub></td>
+<td>13</td>
+<td>12,000</td>
+<td>14,000</td>
+<td>50 - 58</td>
+<td>100 - 117</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>8</sub></td>
+<td>11</td>
+<td>19,000</td>
+<td>23,000</td>
+<td>99 - 120</td>
+<td>198 - 240</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>4</sub></td>
+<td>10</td>
+<td>28,000</td>
+<td>34,000</td>
+<td>175 - 213</td>
+<td>350 - 425</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>8</sub></td>
+<td>9</td>
+<td>39,000</td>
+<td>47,000</td>
+<td>284 - 343</td>
+<td>569 - 685</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>51,000</td>
+<td>61,000</td>
+<td>425 - 508</td>
+<td>850 - 1,017</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>7</td>
+<td>56,000</td>
+<td>67,000</td>
+<td>525 - 625</td>
+<td>1,050 - 1,256</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>7</td>
+<td>71,000</td>
+<td>85,000</td>
+<td>740 - 885</td>
+<td>1,479 - 1,771</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>6</td>
+<td>85,000</td>
+<td>102,000</td>
+<td>974 - 1,169</td>
+<td>1,948 - 2,338</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>6</td>
+<td>103,000</td>
+<td>124,000</td>
+<td>1,288 - 1,550</td>
+<td>2,575 - 3,100</td>
+</tr>
+</tbody>
+</table></div><a href="#" class="top-of-page" title="top of page"><span class="genericon genericon-uparrow"></span> Top of page</a>
+<h2 id="bolt-torque-a449" class="pb-table-title">ASTM A449 / SAE Grade 5*</h2>
+<div class="table-wrapper"><table class="highlight-table">
+<thead>
+<tr>
+<th rowspan="2">Bolt Size</th>
+<th rowspan="2"><abbr title="Threads Per Inch">TPI</abbr></th>
+<th rowspan="2">Proof
+Load (lbs)&nbsp;<sup><a href="#note1">1</a></sup></th>
+<th rowspan="2">Clamp
+Load (lbs)&nbsp;<sup><a href="#note2">2</a></sup></th>
+<th colspan="3">Tightening Torque (ft lbs)</th>
+</tr>
+<tr>
+<th class="finish">Galv+Waxed</th>
+<th class="finish">Galv</th>
+<th class="finish">Plain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>⁄<sub>4</sub></td>
+<td>20</td>
+<td>2,700</td>
+<td>2,025</td>
+<td>4</td>
+<td>11</td>
+<td>8</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>16</sub></td>
+<td>18</td>
+<td>4,450</td>
+<td>3,338</td>
+<td>9</td>
+<td>22</td>
+<td>17</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>8</sub></td>
+<td>16</td>
+<td>6,600</td>
+<td>4,950</td>
+<td>15</td>
+<td>39</td>
+<td>31</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>16</sub></td>
+<td>14</td>
+<td>9,050</td>
+<td>6,788</td>
+<td>25</td>
+<td>62</td>
+<td>49</td>
+</tr>
+<tr>
+<td><sup>1</sup>⁄<sub>2</sub></td>
+<td>13</td>
+<td>12,050</td>
+<td>9,038</td>
+<td>38</td>
+<td>94</td>
+<td>75</td>
+</tr>
+<tr>
+<td><sup>9</sup>⁄<sub>16</sub></td>
+<td>12</td>
+<td>15,450</td>
+<td>11,588</td>
+<td>54</td>
+<td>136</td>
+<td>109</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>8</sub></td>
+<td>11</td>
+<td>19,200</td>
+<td>14,400</td>
+<td>75</td>
+<td>188</td>
+<td>150</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>4</sub></td>
+<td>10</td>
+<td>28,400</td>
+<td>21,300</td>
+<td>133</td>
+<td>333</td>
+<td>266</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>8</sub></td>
+<td>9</td>
+<td>39,250</td>
+<td>29,438</td>
+<td>215</td>
+<td>537</td>
+<td>429</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>51,500</td>
+<td>38,625</td>
+<td>322</td>
+<td>805</td>
+<td>644</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>7</td>
+<td>56,450</td>
+<td>42,338</td>
+<td>397</td>
+<td>992</td>
+<td>794</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>7</td>
+<td>71,700</td>
+<td>53,775</td>
+<td>560</td>
+<td>1,400</td>
+<td>1,120</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>6</td>
+<td>85,450</td>
+<td>64,088</td>
+<td>734</td>
+<td>1,836</td>
+<td>1,469</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>6</td>
+<td>104,000</td>
+<td>78,000</td>
+<td>975</td>
+<td>2,438</td>
+<td>1,950</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>4</sub></td>
+<td>5</td>
+<td>104,500</td>
+<td>78,375</td>
+<td>1,143</td>
+<td>2,857</td>
+<td>2,286</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>137,500</td>
+<td>103,125</td>
+<td>1,719</td>
+<td>4,297</td>
+<td>3,438</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>4</sub></td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>178,750</td>
+<td>134,063</td>
+<td>2,514</td>
+<td>6,284</td>
+<td>5,027</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>2</sub></td>
+<td>4</td>
+<td>220,000</td>
+<td>165,000</td>
+<td>3,438</td>
+<td>8,594</td>
+<td>6,875</td>
+</tr>
+<tr>
+<td>2<sup>3</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>271,150</td>
+<td>203,363</td>
+<td>4,660</td>
+<td>11,651</td>
+<td>9,321</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>328,350</td>
+<td>246,263</td>
+<td>6,157</td>
+<td>15,391</td>
+<td>12,313</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="7">* SAE J429 grade 5 bolts do not exceed 1-1/2" diameter.</td>
+</tr>
+</tfoot>
+</table></div><a href="#" class="top-of-page" title="top of page"><span class="genericon genericon-uparrow"></span> Top of page</a>
+<h2 id="bolt-torque-a193b7" class="pb-table-title">ASTM A193 B7&nbsp;/ ASTM A320 L7</h2>
+<div class="table-wrapper"><table class="highlight-table">
+<thead>
+<tr>
+<th rowspan="2">Bolt Size</th>
+<th rowspan="2"><abbr title="Threads Per Inch">TPI</abbr></th>
+<th rowspan="2">Proof
+Load (lbs)&nbsp;<sup><a style="color: #2e3e7e" href="#note1">1</a></sup></th>
+<th rowspan="2">Clamp
+Load (lbs)&nbsp;<sup><a style="color: #2e3e7e" href="#note2">2</a></sup></th>
+<th colspan="3">Tightening Torque (ft lbs)</th>
+</tr>
+<tr>
+<th class="finish">Galv+Waxed</th>
+<th class="finish">Galv</th>
+<th class="finish">Plain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>⁄<sub>4</sub></td>
+<td>20</td>
+<td>3,350</td>
+<td>2,513</td>
+<td>5</td>
+<td>13</td>
+<td>10</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>16</sub></td>
+<td>18</td>
+<td>5,500</td>
+<td>4,125</td>
+<td>11</td>
+<td>27</td>
+<td>21</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>8</sub></td>
+<td>16</td>
+<td>8,150</td>
+<td>6,113</td>
+<td>19</td>
+<td>48</td>
+<td>38</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>16</sub></td>
+<td>14</td>
+<td>11,150</td>
+<td>8,363</td>
+<td>30</td>
+<td>76</td>
+<td>61</td>
+</tr>
+<tr>
+<td><sup>1</sup>⁄<sub>2</sub></td>
+<td>13</td>
+<td>14,900</td>
+<td>11,175</td>
+<td>47</td>
+<td>116</td>
+<td>93</td>
+</tr>
+<tr>
+<td><sup>9</sup>⁄<sub>16</sub></td>
+<td>12</td>
+<td>19,100</td>
+<td>14,325</td>
+<td>67</td>
+<td>168</td>
+<td>134</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>8</sub></td>
+<td>11</td>
+<td>23,750</td>
+<td>17,813</td>
+<td>93</td>
+<td>232</td>
+<td>186</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>4</sub></td>
+<td>10</td>
+<td>35,050</td>
+<td>26,288</td>
+<td>164</td>
+<td>411</td>
+<td>329</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>8</sub></td>
+<td>9</td>
+<td>48,500</td>
+<td>36,375</td>
+<td>265</td>
+<td>663</td>
+<td>530</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>63,650</td>
+<td>47,738</td>
+<td>398</td>
+<td>995</td>
+<td>796</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>7</td>
+<td>80,100</td>
+<td>60,075</td>
+<td>563</td>
+<td>1,408</td>
+<td>1,126</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>8</td>
+<td>82,934</td>
+<td>62,201</td>
+<td>583</td>
+<td>1,458</td>
+<td>1,166</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>7</td>
+<td>101,750</td>
+<td>76,313</td>
+<td>795</td>
+<td>1,987</td>
+<td>1,590</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>8</td>
+<td>105,006</td>
+<td>78,754</td>
+<td>820</td>
+<td>2,051</td>
+<td>1,641</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>6</td>
+<td>121,300</td>
+<td>90,975</td>
+<td>1,042</td>
+<td>2,606</td>
+<td>2,085</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>8</td>
+<td>129,492</td>
+<td>97,119</td>
+<td>1,113</td>
+<td>2,782</td>
+<td>2,226</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>6</td>
+<td>147,550</td>
+<td>110,663</td>
+<td>1,383</td>
+<td>3,458</td>
+<td>2,767</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>8</td>
+<td>156,687</td>
+<td>117,515</td>
+<td>1,469</td>
+<td>3,672</td>
+<td>2,938</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>4</sub></td>
+<td>5</td>
+<td>199,500</td>
+<td>149,625</td>
+<td>2,182</td>
+<td>5,455</td>
+<td>4,364</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>4</sub></td>
+<td>8</td>
+<td>218,400</td>
+<td>163,800</td>
+<td>-</td>
+<td>-</td>
+<td>4,778</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>262,500</td>
+<td>196,875</td>
+<td>3,281</td>
+<td>8,203</td>
+<td>6,563</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8</td>
+<td>290,850</td>
+<td>218,138</td>
+<td>-</td>
+<td>-</td>
+<td>7,271</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>4</sub></td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>341,250</td>
+<td>255,938</td>
+<td>4,799</td>
+<td>11,997</td>
+<td>9,598</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>4</sub></td>
+<td>8</td>
+<td>373,801</td>
+<td>280,351</td>
+<td>-</td>
+<td>-</td>
+<td>10,513</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>2</sub></td>
+<td>4</td>
+<td>420,000</td>
+<td>315,000</td>
+<td>6,563</td>
+<td>16,406</td>
+<td>13,125</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>2</sub></td>
+<td>8</td>
+<td>466,200</td>
+<td>349,650</td>
+<td>-</td>
+<td>-</td>
+<td>14,569</td>
+</tr>
+<tr>
+<td>2<sup>3</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>468,500</td>
+<td>351,263</td>
+<td>8,050</td>
+<td>20,124</td>
+<td>16,100</td>
+</tr>
+<tr>
+<td>2<sup>3</sup>⁄<sub>4</sub></td>
+<td>8</td>
+<td>515,851</td>
+<td>386,888</td>
+<td>-</td>
+<td>-</td>
+<td>17,732</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>567,150</td>
+<td>425,363</td>
+<td>10,634</td>
+<td>26,585</td>
+<td>21,268</td>
+</tr>
+<tr>
+<td>3</td>
+<td>8</td>
+<td>618,451</td>
+<td>463,838</td>
+<td>-</td>
+<td>-</td>
+<td>23,192</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>674,500</td>
+<td>505,875</td>
+<td>13,701</td>
+<td>34,252</td>
+<td>27,402</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>4</sub></td>
+<td>8</td>
+<td>730,550</td>
+<td>547,913</td>
+<td>-</td>
+<td>-</td>
+<td>29,679</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>2</sub></td>
+<td>4</td>
+<td>791,350</td>
+<td>593,513</td>
+<td>17,311</td>
+<td>43,277</td>
+<td>34,622</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>2</sub></td>
+<td>8</td>
+<td>851,201</td>
+<td>638,401</td>
+<td>-</td>
+<td>-</td>
+<td>37,240</td>
+</tr>
+<tr>
+<td>3<sup>3</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>917700</td>
+<td>688275</td>
+<td>21,509</td>
+<td>53,771</td>
+<td>43,017</td>
+</tr>
+<tr>
+<td>3<sup>3</sup>⁄<sub>4</sub></td>
+<td>8</td>
+<td>982,300</td>
+<td>736,725</td>
+<td>-</td>
+<td>-</td>
+<td>46,045</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td>1052600</td>
+<td>789450</td>
+<td>26,315</td>
+<td>65,788</td>
+<td>52,630</td>
+</tr>
+<tr>
+<td>4</td>
+<td>8</td>
+<td>1,121,950</td>
+<td>841,463</td>
+<td>-</td>
+<td>-</td>
+<td>56,098</td>
+</tr>
+</tbody>
+</table></div><a href="#" class="top-of-page" title="top of page"><span class="genericon genericon-uparrow"></span> Top of page</a>
+<h2 id="bolt-torque-a490" class="pb-table-title">ASTM A490</h2>
+<div class="table-wrapper"><table class="highlight-table">
+<thead>
+<tr>
+<th rowspan="2">Bolt Size</th>
+<th rowspan="2"><abbr title="Threads Per Inch">TPI</abbr></th>
+<th colspan="2">Tension (lbs)</th>
+<th colspan="2">Tightening Torque Range (ft lbs) (Min - Max)</th>
+</tr>
+<tr>
+<th>Min</th>
+<th>Max</th>
+<th class="finish">Plain</th>
+<th class="finish">Lubricated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>⁄<sub>2</sub></td>
+<td>13</td>
+<td>15,000</td>
+<td>18,000</td>
+<td>125 - 150</td>
+<td>63 - 75</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>8</sub></td>
+<td>11</td>
+<td>24,000</td>
+<td>29,000</td>
+<td>250 - 302</td>
+<td>125 - 151</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>4</sub></td>
+<td>10</td>
+<td>35,000</td>
+<td>42,000</td>
+<td>438 - 525</td>
+<td>219 - 263</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>8</sub></td>
+<td>9</td>
+<td>49,000</td>
+<td>59,000</td>
+<td>715 - 860</td>
+<td>357 - 430</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>64,000</td>
+<td>77,000</td>
+<td>1,067 - 1,283</td>
+<td>533 - 642</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>7</td>
+<td>80,000</td>
+<td>96,000</td>
+<td>1,500 - 1,800</td>
+<td>750 - 900</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>7</td>
+<td>102,000</td>
+<td>122,000</td>
+<td>2,125 - 2,542</td>
+<td>1,063 - 1,271</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>6</td>
+<td>121,000</td>
+<td>145,000</td>
+<td>2,773 - 3,323</td>
+<td>1,386 - 1,661</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>6</td>
+<td>148,000</td>
+<td>178,000</td>
+<td>3,700 - 4,450</td>
+<td>1,850 - 2,225</td>
+</tr>
+</tbody>
+</table></div><a href="#" class="top-of-page" title="top of page"><span class="genericon genericon-uparrow"></span> Top of page</a>
+<h2 id="bolt-torque-a354bd" class="pb-table-title">ASTM A354-BD / SAE Grade 8*</h2>
+<div class="table-wrapper"><table class="highlight-table">
+<thead>
+<tr>
+<th rowspan="2">Bolt Size</th>
+<th rowspan="2"><abbr title="Threads Per Inch">TPI</abbr></th>
+<th rowspan="2">Proof
+
+Load (lbs)&nbsp;<a href="http://www.portlandbolt.com/technicalinformation/bolt-torque-chart.html#note1"><sup>1</sup></a></th>
+<th rowspan="2">Clamp
+
+Load (lbs)&nbsp;<a href="http://www.portlandbolt.com/technicalinformation/bolt-torque-chart.html#note2"><sup>2</sup></a></th>
+<th colspan="2">Tightening Torque (ft lbs)</th>
+</tr>
+<tr>
+<th class="finish">Plain</th>
+<th class="finish">Lubricated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><sup>1</sup>⁄<sub>4</sub></td>
+<td>20</td>
+<td>3,800</td>
+<td>2,850</td>
+<td>12</td>
+<td>6</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>16</sub></td>
+<td>18</td>
+<td>6,300</td>
+<td>4,725</td>
+<td>25</td>
+<td>12</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>8</sub></td>
+<td>16</td>
+<td>9,300</td>
+<td>6,975</td>
+<td>44</td>
+<td>22</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>16</sub></td>
+<td>14</td>
+<td>12,750</td>
+<td>9,563</td>
+<td>70</td>
+<td>35</td>
+</tr>
+<tr>
+<td><sup>1</sup>⁄<sub>2</sub></td>
+<td>13</td>
+<td>17,050</td>
+<td>12,788</td>
+<td>107</td>
+<td>53</td>
+</tr>
+<tr>
+<td><sup>9</sup>⁄<sub>16</sub></td>
+<td>12</td>
+<td>21,850</td>
+<td>16,388</td>
+<td>154</td>
+<td>77</td>
+</tr>
+<tr>
+<td><sup>5</sup>⁄<sub>8</sub></td>
+<td>11</td>
+<td>27,100</td>
+<td>20,325</td>
+<td>212</td>
+<td>106</td>
+</tr>
+<tr>
+<td><sup>3</sup>⁄<sub>4</sub></td>
+<td>10</td>
+<td>40,100</td>
+<td>30,075</td>
+<td>376</td>
+<td>188</td>
+</tr>
+<tr>
+<td><sup>7</sup>⁄<sub>8</sub></td>
+<td>9</td>
+<td>55,450</td>
+<td>41,588</td>
+<td>606</td>
+<td>303</td>
+</tr>
+<tr>
+<td>1</td>
+<td>8</td>
+<td>72,700</td>
+<td>54,525</td>
+<td>909</td>
+<td>454</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>8</sub></td>
+<td>7</td>
+<td>91,550</td>
+<td>68,663</td>
+<td>1,287</td>
+<td>644</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>4</sub></td>
+<td>7</td>
+<td>120,000</td>
+<td>90,000</td>
+<td>1,875</td>
+<td>938</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>8</sub></td>
+<td>6</td>
+<td>138,600</td>
+<td>103,950</td>
+<td>2,382</td>
+<td>1,191</td>
+</tr>
+<tr>
+<td>1<sup>1</sup>⁄<sub>2</sub></td>
+<td>6</td>
+<td>168,600</td>
+<td>126,450</td>
+<td>3,161</td>
+<td>1,581</td>
+</tr>
+<tr>
+<td>1<sup>3</sup>⁄<sub>4</sub></td>
+<td>5</td>
+<td>228,000</td>
+<td>171,000</td>
+<td>4,988</td>
+<td>2,494</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>300,000</td>
+<td>225,000</td>
+<td>7,500</td>
+<td>3,750</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>4</sub></td>
+<td>4<sup>1</sup>⁄<sub>2</sub></td>
+<td>390,000</td>
+<td>292,500</td>
+<td>10,969</td>
+<td>5,484</td>
+</tr>
+<tr>
+<td>2<sup>1</sup>⁄<sub>2</sub></td>
+<td>4</td>
+<td>480,000</td>
+<td>360,000</td>
+<td>15,000</td>
+<td>7,500</td>
+</tr>
+<tr>
+<td>2<sup>3</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>517,650</td>
+<td>388,238</td>
+<td>17,794</td>
+<td>8,897</td>
+</tr>
+<tr>
+<td>3</td>
+<td>4</td>
+<td>626,850</td>
+<td>470,138</td>
+<td>23,507</td>
+<td>11,753</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>745,500</td>
+<td>559,125</td>
+<td>30,286</td>
+<td>15,143</td>
+</tr>
+<tr>
+<td>3<sup>1</sup>⁄<sub>2</sub></td>
+<td>4</td>
+<td>874,650</td>
+<td>655,988</td>
+<td>38,266</td>
+<td>19,133</td>
+</tr>
+<tr>
+<td>3<sup>3</sup>⁄<sub>4</sub></td>
+<td>4</td>
+<td>1,014,300</td>
+<td>760,725</td>
+<td>47,545</td>
+<td>23,773</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td>1,163,400</td>
+<td>872,550</td>
+<td>58,100</td>
+<td>29,085</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="6">* SAE J429 grade 8 bolts do not exceed 1-1/2″ diameter.</td>
+</tr>
+</tfoot>
+</table></div><a href="#" class="top-of-page" title="top of page"><span class="genericon genericon-uparrow"></span> Top of page</a>
+    </div><!-- #content --></div>
+
+</div><!-- #main -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+        <div id="text-8" class="widget widget_text fourth">
+            <h5 class="widget-title">Navigation</h5>			
+            <div class="textwidget">
+                <a href="http://www.portlandbolt.com/">Home</a> | <a href="http://www.portlandbolt.com/about/">About</a> | 
+                <a href="http://www.portlandbolt.com/products/">Products</a> | <a href="http://www.portlandbolt.com/technical/">Technical Information</a> | 
+                <a href="http://www.portlandbolt.com/about/contact/">Contact Us</a> | <a href="http://www.portlandbolt.com/terms-of-use/">Terms of Use</a> |
+                <a href="http://www.portlandbolt.com/privacy-policy/">Privacy Policy</a> | <a href="http://www.portlandbolt.com/sitemap_index.xml">Sitemap</a>
+            </div>
+            <div class="social-footer">
+                <a target="_blank" class="genericon genericon-youtube2" href="https://www.youtube.com/user/pdxbolt" title="YouTube"></a>
+                <a target="_blank" class="genericon genericon-twitter" href="http://twitter.com/PortlandBolt" title="Twitter"></a>
+                <a target="_blank" class="genericon genericon-facebook" href="https://www.facebook.com/portlandbolt" title="Facebook"></a>
+                <a target="_blank" class="genericon genericon-linkedin" href="https://www.linkedin.com/company/portland-bolt-&amp;-manufacturing" title="LinkedIn"></a>
+            </div>
+        </div>
+        <div id="frm_show_form-2" class="widget widget_frm_show_form fourth">
+            <div class="frm_form_widget">
+                <h5 class="widget-title">Newsletter Signup</h5>
+                <p>Sign up for our bi-monthly email newsletter for all the latest!</p>
+                <a href="http://www.portlandbolt.com/about/newsletter/" class="button">Sign up</a>
+            </div>
+        </div>
+        <div id="text-9" class="widget widget_text fourth">
+            <h5 class="widget-title">Buy Direct</h5>			
+            <div class="textwidget">
+                Portland Bolt provides anchor bolts and nonstandard construction 
+                fasteners <strong>directly</strong> to contractors, steel fabricators, 
+                and other companies worldwide.
+            </div>
+        </div>
+        <div id="text-10" class="widget widget_text fourth">
+            <h5 class="widget-title">Location &amp; Hours</h5>			
+            <div class="textwidget textright vcard">
+                <span class="fn hidden">Portland Bolt</span>
+                <span class="email hidden">sales@portlandbolt.com</span>
+                <span class="org">Portland Bolt &amp; Manufacturing Company, Inc.</span> <br>
+                <span class="adr">
+                    <span class="street-address">3441 NW Guam St.</span>, 
+                    <span class="locality">Portland</span>, <span class="region">OR</span> 
+                    <span class="postal-code">97210</span> <span class="country-name">USA</span>
+                </span>
+                <br>
+                Hours: <span itemprop="openingHours" datetime="Mo,Tu,We,Th,Fr 06:00-5:00">Monday - Friday 6 AM to 5 PM PT</span><br>
+                <span class="tel">(800) 547-6758</span> <br>
+            </div>
+        </div>	
+    </div>
+    <div class="site-info">
+        © 1996-2018 Portland Bolt &amp; Mfg. Co.    </div><!-- .site-info -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+<!--footer-->
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="bolt_torque/wp-embed.min.js.download"></script>
+<!-- footer-->
+
+<!-- W3TC-include-js-body-start -->
+
+<script type="text/javascript" src="bolt_torque/saved_resource"></script>
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using disk: enhanced
+Minified using disk
+
+ Served from: www.portlandbolt.com @ 2018-02-19 14:07:47 by W3 Total Cache --></body></html>
