@@ -1,0 +1,367 @@
+<td width="72%" rowspan="2" valign="top" background="stainless-" style="background-repeat:no-repeat;"><div id="gwr_gewichtsrechner">
+    <script language="javascript" type="text/javascript" src="images/calculator/prototype.js"></script>
+			  <script language="JavaScript" type="text/javascript" src="images/calculator/calculator.js"></script>
+              <h1 id="gwr_titel"><font><font>Weight Calculator</font></font></h1>
+              <p>Calculate the weight of different long steel products</p>
+              <div id="gwr_canvas" style="">
+                <div id="gwr_typauswahl" style=""><font><font> Please choose the form of: </font></font>
+                  <select name="typ" id="gwr_typ" onchange="gwr_changeType(); return false">
+                    <option value="rundstahl" selected="selected">Round steel</option>
+                    <option value="vierkant">Square</option>
+                    <option value="sechskant">Allen&nbsp;&nbsp;</option>
+                    <option value="flach">Flat</option>
+                    <option value="rohre">Tubes</option>
+                    <option value="bleche">Sheets</option>
+                  </select>
+                </div>
+                <br>
+                <div id="gwr_formulare">
+                  <div id="gwr_rundstahl" class="gwr_stahlsorte" style="">
+                    <div class="gwr_typ_bild"><img src="images/calculator/roundsteel.gif" alt="Round steel"></div>
+                    <div class="gwr_formular">
+                      <p><strong><font><font>Round steel</font></font></strong></p>
+                      <p> </p>
+                      <div class="table-responsive"><table class="gwr_table_eingaben">
+                        <tbody>
+                          <tr>
+                            <td><font><font>d:</font></font></td>
+                            <td><input type="text" class="gwr_input" id="gwr_rundstahl_d" name="gwr_rundstahl_d" value="2" onkeyup="gwr_rundstahl_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Weight:</font></font></td>
+                            <td><input type="text" class="gwr_input_dis" id="gwr_rundstahl_kgm" name="gwr_rundstahl_kgm" value="0,025" disabled="disabled">
+                                <font><font> kg / m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Length:</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_rundstahl_l" id="gwr_rundstahl_l" value="1" onkeyup="gwr_rundstahl_aktualisiere(); return false">
+                                <font><font> m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Add to Cart:</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_rundstahl_n" id="gwr_rundstahl_n" value="1" onkeyup="gwr_rundstahl_aktualisiere(); return false">
+                                <font><font> Pcs</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="width:60px;"><strong><font><font>Result</font></font></strong><font><font> :</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_rundstahl_ergebnis" id="gwr_rundstahl_ergebnis" value="0,025">
+                                <font><font> kg</font></font></td>
+                          </tr>
+                        </tbody>
+                      </table></div>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div id="gwr_vierkant" class="gwr_stahlsorte" style="display: none;">
+                    <div class="gwr_typ_bild"><img src="images/calculator/square.gif" alt="Square"></div>
+                    <div class="gwr_formular">
+                      <p><strong><font><font>Square</font></font></strong></p>
+                      <p> </p>
+                      <div class="table-responsive"><table class="gwr_table_eingaben">
+                        <tbody>
+                          <tr>
+                            <td><font><font>a:</font></font></td>
+                            <td><input type="text" class="gwr_input" id="gwr_vierkant_a" name="gwr_vierkant_a" value="2" onkeyup="gwr_vierkant_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Weight:</font></font></td>
+                            <td><input type="text" class="gwr_input_dis" id="gwr_vierkant_kgm" name="gwr_vierkant_kgm" value="0,031" disabled="disabled">
+                                <font><font> kg / m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Length:</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_vierkant_l" id="gwr_vierkant_l" value="1" onkeyup="gwr_vierkant_aktualisiere(); return false">
+                                <font><font> m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Add to Cart:</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_vierkant_n" id="gwr_vierkant_n" value="1" onkeyup="gwr_vierkant_aktualisiere(); return false">
+                                <font><font> Pcs</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="width:60px;"><strong><font><font>Result</font></font></strong><font><font> :</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_vierkant_ergebnis" id="gwr_vierkant_ergebnis" value="0,031">
+                                <font><font> kg</font></font></td>
+                          </tr>
+                        </tbody>
+                      </table></div>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div id="gwr_sechskant" class="gwr_stahlsorte" style="display:none;">
+                    <div class="gwr_typ_bild"><img src="images/calculator/hex.gif" alt="Allen"></div>
+                    <div class="gwr_formular">
+                      <p><strong><font><font>Allen</font></font></strong></p>
+                      <p> </p>
+                      <div class="table-responsive"><table class="gwr_table_eingaben">
+                        <tbody>
+                          <tr>
+                            <td><font><font>SW:</font></font></td>
+                            <td><input type="text" class="gwr_input" id="gwr_sechskant_s" name="gwr_sechskant_s" value="2" onkeyup="gwr_sechskant_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Weight:</font></font></td>
+                            <td><input type="text" class="gwr_input_dis" id="gwr_sechskant_kgm" name="gwr_sechskant_kgm" value="0,027" disabled="disabled">
+                                <font><font> kg / m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Length:</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_sechskant_l" id="gwr_sechskant_l" value="1" onkeyup="gwr_sechskant_aktualisiere(); return false">
+                                <font><font> m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Add to Cart:</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_sechskant_n" id="gwr_sechskant_n" value="1" onkeyup="gwr_sechskant_aktualisiere(); return false">
+                                <font><font> Pcs</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="width:60px;"><strong><font><font>Result</font></font></strong><font><font> :</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_sechskant_ergebnis" id="gwr_sechskant_ergebnis" value="0,082">
+                                <font><font> kg</font></font></td>
+                          </tr>
+                        </tbody>
+                      </table></div>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div id="gwr_flach" class="gwr_stahlsorte" style="display:none;">
+                    <div class="gwr_typ_bild"><img src="images/calculator/flat.gif" alt="Flat"></div>
+                    <div class="gwr_formular">
+                      <p><strong><font><font>Flat</font></font></strong></p>
+                      <p> </p>
+                      <div class="table-responsive"><table class="gwr_table_eingaben">
+                        <tbody>
+                          <tr>
+                            <td><font><font>s:</font></font></td>
+                            <td><input type="text" class="gwr_input" id="gwr_flach_s" name="gwr_flach_s" value="2" onkeyup="gwr_flach_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>b:</font></font></td>
+                            <td><input type="text" class="gwr_input" id="gwr_flach_b" name="gwr_flach_b" value="10" onkeyup="gwr_flach_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Weight:</font></font></td>
+                            <td><input type="text" class="gwr_input_dis" id="gwr_flach_kgm" name="gwr_flach_kgm" value="0,157" disabled="disabled">
+                                <font><font> kg / m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Length:</font></font></td>
+                            <td><input type="text" name="gwr_flach_l" class="gwr_input" id="gwr_flach_l" value="1" onkeyup="gwr_flach_aktualisiere(); return false">
+                                <font><font> m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Add to Cart:</font></font></td>
+                            <td><input type="text" name="gwr_flach_n" class="gwr_input" id="gwr_flach_n" value="1" onkeyup="gwr_flach_aktualisiere(); return false">
+                                <font><font> Pcs</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="width:60px;"><strong><font><font>Result</font></font></strong><font><font> :</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_flach_ergebnis" id="gwr_flach_ergebnis" value="0,157">
+                                <font><font> kg</font></font></td>
+                          </tr>
+                        </tbody>
+                      </table></div>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div id="gwr_rohre" class="gwr_stahlsorte" style="display:none;">
+                    <div class="gwr_typ_bild"><img src="images/calculator/tubes-rohre.gif" alt="Tubes"></div>
+                    <div class="gwr_formular">
+                      <p><strong><font><font>Tubes</font></font></strong></p>
+                      <p> </p>
+                      <div class="table-responsive"><table class="gwr_table_eingaben">
+                        <tbody>
+                          <tr>
+                            <td><font><font>d:</font></font></td>
+                            <td><input type="text" class="gwr_input" id="gwr_rohre_d" name="gwr_rohre_d" value="10,2" onkeyup="gwr_rohre_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>s:</font></font></td>
+                            <td><input type="text" class="gwr_input" id="gwr_rohre_s" name="gwr_rohre_s" value="1,6" onkeyup="gwr_rohre_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Weight:</font></font></td>
+                            <td><input type="text" class="gwr_input_dis" id="gwr_rohre_kgm" name="gwr_rohre_kgm" value="0,339" disabled="disabled">
+                                <font><font> kg / m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Length:</font></font></td>
+                            <td><input type="text" name="gwr_rohre_l" class="gwr_input" id="gwr_rohre_l" value="1" onkeyup="gwr_rohre_aktualisiere(); return false">
+                                <font><font> m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td><font><font>Add to Cart:</font></font></td>
+                            <td><input type="text" name="gwr_rohre_n" class="gwr_input" id="gwr_rohre_n" value="1" onkeyup="gwr_rohre_aktualisiere(); return false">
+                                <font><font> Pcs</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="width:60px;"><strong><font><font>Result</font></font></strong><font><font> :</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_rohre_ergebnis" id="gwr_rohre_ergebnis" value="0,339">
+                                <font><font> kg</font></font></td>
+                          </tr>
+                        </tbody>
+                      </table></div>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div id="gwr_bleche" class="gwr_stahlsorte" style="display: none;">
+                    <div class="gwr_typ_bild"><img src="images/calculator/sheets-bleche.gif" alt="Sheets"></div>
+                    <div class="gwr_formular">
+                      <p><strong><font><font>Sheets</font></font></strong></p>
+                      <p> </p>
+                      <div class="table-responsive"><table class="gwr_table_eingaben">
+                        <tbody>
+                          <tr>
+                            <td style="width:60px;"><font><font>s:</font></font></td>
+                            <td><input class="gwr_input_dis" type="text" id="gwr_bleche_s" name="gwr_bleche_s" value="2" onkeyup="gwr_bleche_aktualisiere(); return false">
+                                <font><font> mm</font></font></td>
+                          </tr>
+                          <tr>
+                            <td style="width:60px;"><font><font>Weight:</font></font></td>
+                            <td><input class="gwr_input_dis" type="text" id="gwr_bleche_kgm" name="gwr_bleche_kgm" value="15,7" disabled="disabled">
+                                <font><font> kg / m</font></font></td>
+                          </tr>
+                          <tr>
+                            <td style="width:60px;"><font><font>Add to Cart:</font></font></td>
+                            <td><input type="text" class="gwr_input" name="gwr_bleche_n" id="gwr_bleche_n" value="1" onkeyup="gwr_bleche_aktualisiere(); return false">
+                                <font><font> Pcs</font></font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">&nbsp;</td>
+                          </tr>
+                        </tbody>
+                      </table></div>
+                      <strong><font><font>Results </font></font></strong><br>
+                      <small><font><font>1000 x 1000 mm</font></font></small>
+                      <input type="text" class="gwr_input" name="gwr_bleche_ergebnis_1000" id="gwr_bleche_ergebnis_1000" value="15,7">
+                      <font><font>kg </font><small><font>1000 x 2000 mm</font></small></font><br>
+                      <small><font></font></small>
+                      <input type="text" class="gwr_input" name="gwr_bleche_ergebnis_2000" id="gwr_bleche_ergebnis_2000" value="31,4">
+                      <font><font>kg </font><small><font>1250 x 2500 mm</font></small></font><br>
+                      <small><font></font></small>
+                      <input type="text" class="gwr_input" name="gwr_bleche_ergebnis_2500" id="gwr_bleche_ergebnis_2500" value="49,063">
+                      <font><font>kg </font><small><font>1500 x 3000 mm</font></small></font><br>
+                      <small><font></font></small>
+                      <input type="text" class="gwr_input" name="gwr_bleche_ergebnis_3000" id="gwr_bleche_ergebnis_3000" value="70,65">
+                      <font><font> kg</font></font><br>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- formulare -->
+                <!---
+										<div id="gwr_footer" style="font-size:7pt">
+												Stahl-Gewichtsrechner | Version 1.1.0 | developed by <a href="http://www.webmatch.de" style="text-decoration:none; color:#444; font-family:Arial; font-weight:normal; font-size:1em;">Webmatch GmbH</a>&nbsp;
+										</div>
+									--->
+              </div>
+              <!-- canvas -->
+            </div>            <h3>&nbsp;</h3>
+            <h1>Flanges Calculator | flange weight calculator | wnrf flange weight calculator | stainless steel weld neck flange calculator</h1>
+            <div class="content_left">
+              <!--  CONTENT ELEMENT, uid:296/text [begin] -->
+              <!--  Header: [begin] -->
+              <!--  Header: [end] -->
+              <!--  CONTENT ELEMENT, uid:296/text [end] -->
+              <!--  CONTENT ELEMENT, uid:297/html [begin] -->
+              <!--  Raw HTML content: [begin] -->
+              <script type="text/javascript">
+var Flansche = new Flansche();
+            </script>
+              <div id="flanscheform">
+                <input type="radio" value="1" name="radio1" id="fmFormType1" checked="checked" onclick="Flansche.setNormal();">
+                <label for="fmFormType1" onclick="Flansche.setNormal();Flansche.setValues('');">Flat face flanges</label>
+                <input type="radio" value="2" name="radio1" id="fmFormType2" onclick="Flansche.setBlind();Flansche.setValues('');">
+                <label for="fmFormType2" onclick="Flansche.setBlind();">Blind flanges (smooth sealing  surface)</label>
+                <fieldset id="fmNormal">
+                <div class="form_spacer">
+                  <label for="fmAussenDurchm" class="input_desc">Outside diameter:</label>
+                  <input type="text" name="input1" id="fmAussenDurchm" onchange="Flansche.validFloat(this);">
+                  mm </div>
+                  <div id="fmInnenDurchmesser">
+                  <div class="form_spacer">
+                    <label for="fmInnenDurchm" class="input_desc">Inside diameter:</label>
+                    <input type="text" name="input2" id="fmInnenDurchm" onchange="Flansche.validFloat(this);">
+                    mm </div>
+                  </div>
+                  <div class="form_spacer">
+                  <label for="fmBlattSt" class="input_desc">Sheet thickness: </label>
+                  <input type="text" name="input3" id="fmBlattSt" onchange="Flansche.validFloat(this);">
+                    mm </div>
+                  <div class="form_spacer">
+                  <label for="fmBohrAnz" class="input_desc">Number of drill holes: </label>
+                  <input type="text" name="input4" id="fmBohrAnz" onchange="Flansche.validInt(this);">
+                  </div>
+                  <div class="form_spacer">
+                  <label for="fmBohrDurchm" class="input_desc">Drill hole diameter:</label>
+                  <input type="text" name="input5" id="fmBohrDurchm" onchange="Flansche.validFloat(this);">
+                    mm </div>
+                  <div id="fmKantenbruch">
+                  <div class="form_spacer">
+                    <label for="fmKanten" class="input_desc">Chamfer (inside 45 deg.):</label>
+                    <input type="text" name="input6" id="fmKanten" onchange="Flansche.validFloat(this);">
+                    mm </div>
+                  </div>
+                </fieldset>
+                <fieldset id="fmBlind" style="display: none;">
+                <div class="form_spacer">
+                  <label for="fmD9" class="input_desc">d9-Maß:</label>
+                  <input type="text" name="input7" id="fmD9" onchange="Flansche.validFloat(this);">
+                  mm <img src="images/calculator/1px.gif" id="fmD9Img" alt=""> </div>
+                  <div style="display: none;">
+                  <div class="form_spacer">
+                    <label for="fmInnenDurchm2" class="input_desc">Inside diameter:</label>
+                    <input type="text" name="input8" id="fmInnenDurchm2" onchange="Flansche.validFloat(this);">
+                    mm <img src="images/calculator/1px.gif" id="fmInnenDurchm2Img" alt=""> </div>
+                  </div>
+                  <div class="form_spacer">
+                  <label for="fmDichtLeiste" class="input_desc">Dichtleistentiefe:</label>
+                  <input type="text" name="input9" id="fmDichtLeiste" onchange="Flansche.validFloat(this);">
+                    mm <img src="images/calculator/1px.gif" id="fmDichtLeisteImg" alt=""> </div>
+                </fieldset>
+                <div id="fmErgebnis">Weight of finished part: <b>0</b> kg</div>
+                <button onclick="Flansche.evalute();">Calculate</button>
+              </div>
+              <!--  Raw HTML content: [end] -->
+              <!--  CONTENT ELEMENT, uid:297/html [end] -->
+            </div>            <p>&nbsp;</p></td>
