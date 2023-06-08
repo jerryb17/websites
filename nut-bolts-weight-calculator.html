@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><script src="calc.js.download"></script>
+<link href="calc.css" rel="stylesheet" type="text/css">
+<link href="stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+<!--
+.style1 {color: #333333}
+-->
+</style>
+</head><body><center>
+<form name="f">
+<table>
+<tbody><tr><td><span class="style1">Diameter:<br>
+ (For Bolt, Nut and Washer)</span></td> 
+<td><select name="d" onChange="mmbolt()" "location.href="javascript:void(0)" ;"="">
+	<option value="5">M 5</option><option value="6">M 6</option><option value="8">M 8</option><option value="10">M 10</option><option value="12">M 12</option><option value="14">M 14</option><option value="16">M 16</option><option value="18">M 18</option><option value="20">M 20</option><option value="22">M 22</option><option value="24">M 24</option><option value="27">M 27</option><option value="30">M 30</option><option value="33">M 33</option><option value="36">M 36</option><option value="39">M 39</option><option value="42">M 42</option><option value="45">M 45</option><option value="48">M 48</option><option value="52">M 52</option></select> </td></tr>
+
+<tr><td><span class="style1">Length:<br>
+ ("0" Means Bolt not Required)<br>
+ (Length of the Hex Bolt Below Head)</span></td>
+<td><input type="number" value="0" name="l"> <small class="style1">mm</small></td></tr>
+
+<tr><td><span class="style1">Nut(s):<br>
+ (Size = Hex Bolt Diameter)</span></td>
+  <td class="style1"><select name="nut" onChange="mmbolt()" "location.href="javascript:void(0)" ;"="">
+      <option value="0">0 Nut</option><option value="1">1 Nut</option><option value="2">2 Nuts</option><option value="3">3 Nuts</option><option value="4">4 Nuts</option></select><small> per Bolt</small>   </td></tr>
+  <tr> <td><span class="style1">Rate (Rs.):<br>
+(This is just for calculation)</span></td>
+<td><input type="number" name="rt" size="4">
+<small class="style1">/Kg.</small></td></tr></tbody></table>
+<br>
+<table>  <tbody><tr> <td> <center>
+<input type="button" value="Calculate" class="button" onClick="mmbolt()" "location.href="javascript:void(0)" ;"="">
+</center>
+</td></tr>
+  
+<tr><td>&nbsp;</td></tr></tbody></table>
+ <table> <tbody><tr><td class="style1">Weight Each:</td>
+   <td><b> <p id="d"> </p></b></td></tr>
+
+
+  <tr><td class="style1">Rate Each:</td>
+ <td><b> <p id="e"> </p></b></td></tr>
+</tbody></table>
+</form>
+</center></body></html>
